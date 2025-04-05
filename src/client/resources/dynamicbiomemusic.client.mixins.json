@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "wilarn.dynamicbiomemusic.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MusicMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

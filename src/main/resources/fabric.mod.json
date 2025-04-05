@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "dynamicbiomemusic",
+	"version": "${version}",
+	"name": "DynamicBiomeMusic",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dynamicbiomemusic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"wilarn.dynamicbiomemusic.DynamicBiomeMusic"
+		],
+		"client": [
+			"wilarn.dynamicbiomemusic.DynamicBiomeMusicClient"
+		]
+	},
+	"mixins": [
+		"dynamicbiomemusic.mixins.json",
+		{
+			"config": "dynamicbiomemusic.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
